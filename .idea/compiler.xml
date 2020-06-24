@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-consumer-dept-feign" />
+        <module name="spring-cloud-provider-dept-8003" />
+        <module name="spring-cloud-provider-dept-8002" />
+        <module name="spring-cloud-provider-dept-8001" />
+        <module name="spring-cloud-eureka-7003" />
+        <module name="spring-cloud-eureka-7002" />
+        <module name="spring-cloud-eureka-7001" />
+        <module name="spring-cloud-consumer-dept-80" />
+        <module name="spring-cloud-api" />
+        <module name="spring-cloud-provider-dept-hystrix-8001" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-cloud" options="-parameters" />
+      <module name="spring-cloud-api" options="-parameters" />
+      <module name="spring-cloud-consumer-dept-80" options="-parameters" />
+      <module name="spring-cloud-consumer-dept-feign" options="-parameters" />
+      <module name="spring-cloud-eureka-7001" options="-parameters" />
+      <module name="spring-cloud-eureka-7002" options="-parameters" />
+      <module name="spring-cloud-eureka-7003" options="-parameters" />
+      <module name="spring-cloud-provider-dept-8001" options="-parameters" />
+      <module name="spring-cloud-provider-dept-8002" options="-parameters" />
+      <module name="spring-cloud-provider-dept-8003" options="-parameters" />
+      <module name="spring-cloud-provider-dept-hystrix-8001" options="-parameters" />
+    </option>
+  </component>
+</project>
