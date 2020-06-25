@@ -12,7 +12,11 @@ import java.util.List;
  * @author lee549
  * @date 2020/6/24 12:05
  */
-@FeignClient(value = "SPRING-CLOUD-DEPT")
+
+/**
+ * 服务熔断，利用AOP 织入的思想，解决高耦合，当接口出现异常通通交给DeptClientServiceFallbackFactory处理
+ */
+@FeignClient(value = "SPRING-CLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
     @RequestMapping("/dept/add")
     boolean add(Dept dept);

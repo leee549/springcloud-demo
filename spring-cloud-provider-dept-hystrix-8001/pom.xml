@@ -28,7 +28,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
-
         <!--引入自定义的api共用包-->
         <dependency>
             <groupId>cn.lhx</groupId>
