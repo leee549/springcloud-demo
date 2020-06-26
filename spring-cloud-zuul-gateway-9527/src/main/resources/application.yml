@@ -1,0 +1,29 @@
+######################## common config : ########################
+#服务器配置
+server:
+  port: 9527
+  error:                                              #获取异常信息
+    include-exception: true
+#spring配置
+spring:
+  application:
+    name: spring-cloud-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/, http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+info:
+  app.name: ${spring.application.name}
+  company.name: 北京女子仁爱医院
+  company.url: www.saltlee.cn
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+zuul:
+  routes:
+    mydept.serviceId: spring-cloud-dept
+    mydept.path: /mydept/**
+  ignored-services: "*" #隐藏原来的服务接口
+  prefix: saltlee  #统一服务前缀
