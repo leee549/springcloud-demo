@@ -7,25 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-consumer-dept-htstrix-dashboard" />
-        <module name="spring-cloud-consumer-dept-feign" />
         <module name="spring-cloud-provider-dept-8003" />
-        <module name="spring-cloud-provider-dept-8002" />
+        <module name="spring-cloud-config-3344" />
         <module name="spring-cloud-provider-dept-8001" />
-        <module name="spring-cloud-eureka-7003" />
-        <module name="spring-cloud-eureka-7002" />
-        <module name="spring-cloud-eureka-7001" />
+        <module name="spring-cloud-provider-dept-8002" />
         <module name="spring-cloud-consumer-dept-80" />
-        <module name="spring-cloud-api" />
-        <module name="spring-cloud-provider-dept-hystrix-8001" />
+        <module name="spring-cloud-config-client-3355" />
+        <module name="spring-cloud-eureka-7002" />
+        <module name="spring-cloud-eureka-7003" />
+        <module name="spring-cloud-consumer-dept-feign" />
+        <module name="spring-cloud-eureka-7001" />
         <module name="spring-cloud-zuul-gateway-9527" />
+        <module name="spring-cloud-provider-dept-hystrix-8001" />
+        <module name="spring-cloud-api" />
+        <module name="spring-cloud-consumer-dept-htstrix-dashboard" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-cloud-config-3344" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud" options="-parameters" />
       <module name="spring-cloud-api" options="-parameters" />
+      <module name="spring-cloud-config-3344" options="-parameters" />
+      <module name="spring-cloud-config-client-3355" options="-parameters" />
       <module name="spring-cloud-consumer-dept-80" options="-parameters" />
       <module name="spring-cloud-consumer-dept-feign" options="-parameters" />
       <module name="spring-cloud-consumer-dept-htstrix-dashboard" options="-parameters" />
