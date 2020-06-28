@@ -22,6 +22,8 @@
         <module>spring-cloud-zuul-gateway-9527</module>
         <module>spring-cloud-config</module>
         <module>spring-cloud-config-client-3355</module>
+        <module>spring-cloud-config-eureka-client-7001</module>
+        <module>spring-cloud-config-dept-client-8001</module>
     </modules>
     <packaging>pom</packaging>
 

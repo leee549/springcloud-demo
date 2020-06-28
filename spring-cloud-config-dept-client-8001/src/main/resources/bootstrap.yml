@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      uri: http://config-3344.com:3344
+      name: springcloud-config-dept-client #需要从GitHub上读取配置文件   不要后缀.yml
+      profile: test        #本次访问的配置项
+      label: master
+eureka: #客户端注册进Eureka服务列表
+  client:
+    register-with-eureka: false
+    fetch-registry: false
